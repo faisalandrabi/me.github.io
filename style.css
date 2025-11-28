@@ -330,6 +330,28 @@ body {
     color: var(--text-light);
 }
 
+/* Certifications */
+.certifications-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.certifications-list li {
+    padding-left: 1.5rem;
+    margin-bottom: 0.6rem;
+    position: relative;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-light);
+}
+
+.certifications-list li::before {
+    content: '📜';
+    position: absolute;
+    left: 0;
+    font-size: 0.8rem;
+}
+
 /* Footer */
 .footer {
     text-align: center;
