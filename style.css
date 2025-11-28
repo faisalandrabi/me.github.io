@@ -21,13 +21,16 @@ body {
     background: #f9fafb;
 }
 
-/* Header */
+/* Header - Sticky */
 .header {
     background: linear-gradient(135deg, var(--purple-dark) 0%, #5c2252 100%);
     color: white;
     text-align: center;
-    padding: 3rem 2rem;
-    position: relative;
+    padding: 1.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-photo {
@@ -60,7 +63,7 @@ body {
 .job-title {
     font-size: 1.1rem;
     font-weight: 400;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     opacity: 0.95;
 }
 
@@ -387,6 +390,7 @@ body {
     }
 
     .header {
+        position: relative;
         print-color-adjust: exact;
         -webkit-print-color-adjust: exact;
     }
